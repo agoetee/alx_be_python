@@ -2,7 +2,7 @@
 This lists the tasks in this directory
 
 ## 0. Basic Arithmetic Exercise
-Task Description:
+__Task Description__:
 
 You are required to complete a Python script that performs basic arithmetic operations with two predefined numbers. The script should do the following:
 
