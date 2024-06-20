@@ -25,7 +25,7 @@ Your task is to complete a Python script that calculates the simple interest ear
  - ( T ) is the time the money is invested for in years.
 
 ## 2. Calculate the Area of a Rectangle
-Objective: Use basic Python arithmetic operations and variable assignments to calculate the area of a rectangle using its length and width.
+__Objective__: Use basic Python arithmetic operations and variable assignments to calculate the area of a rectangle using its length and width.
 
 __Task Description__:
 
@@ -40,4 +40,19 @@ __Instructions__:
  - For simplicity, let’s use length = 10 and width = 5.
  -  Calculate the area of the rectangle using the formula (Area = length × width) and store the result in a variable named area.
  - Print the calculated area in a format: The area of the rectangle is: [area].
+
+## 3. Convert Hours to Seconds 
+__Objective:__ Demonstrate understanding of variable assignments and arithmetic operations by converting a given number of hours into seconds.
+
+__Task Description__:
+
+For this task, write a Python script that converts a specific number of hours into seconds. This task reinforces the concept of arithmetic operations within a practical context.
+
+__Instructions__:
+
+ - Create a file named hours_to_seconds.py.
+ - Define a variable named hours and assign it a value representing the number of hours you want to convert to seconds. Use hours = 2.
+ - Calculate the number of seconds in the given hours. Remember, there are 3600 seconds in an hour (since there are 60 minutes in an hour and 60 seconds in a minute, thus 60 x 60 = 3600).
+ - Store the result of the conversion in a variable named seconds.
+ - Print the result in the format: [hours] hour(s) is [seconds] seconds.
 
