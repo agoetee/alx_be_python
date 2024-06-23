@@ -6,7 +6,7 @@ __Task Description__:
 
 You are required to complete a Python script that performs basic arithmetic operations with two predefined numbers. The script should do the following:
 
- - Assign specific values to two variables, number1 and number2.
+ - Assign specific values to two variables, `number1` and `number2`.
  - Perform addition, subtraction, and multiplication on these numbers.
  - Print the results of these operations in a human-readable format.
 
@@ -17,7 +17,7 @@ You are required to complete a Python script that performs basic arithmetic oper
 
 **Task Description**:
 
-Your task is to complete a Python script that calculates the simple interest earned on an investment over a period of time. The formula for simple interest is (I = P * R * T), where:
+Your task is to complete a Python script that calculates the simple interest earned on an investment over a period of time. The formula for simple interest is `(I = P * R * T)`, where:
 
  - ( I ) is the interest earned,
  - ( P ) is the principal amount (initial investment),
