@@ -1,8 +1,8 @@
 # This program that uses conditionals, match case and loops to remind the user
 
-task = input("Input a task: ")
-priority = input("Enter its priority level(high, medium, low): ")
-time_bound = input("Is it time bound? (yes/no): ")
+task = input("Enter your task: ")
+priority = input("Priority (high, medium, low): ")
+time_bound = input("Is it time-bound? (yes/no): ")
 
 match priority:
     case "high":
