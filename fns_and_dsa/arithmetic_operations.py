@@ -4,7 +4,7 @@ operations. This function, perform_operation, will be
 imported and used in a separate main.py script, which we provide.
 """
 
-def perform_operation(num1: float, num2: float, operation: str):
+def perform_operation(num1, num2, operation):
     operation = ['add', 'subtract', 'multiply', 'divide']
 
     match operation:
