@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
 Here is an example output
 
-```
+```sh
 >>> python .\main.py
 Arithmetic Operations
 Enter the first number: 5
@@ -55,16 +55,16 @@ Create a Python script named `shopping_list_manager.py` that implements a simple
 
 __Requirements__:
 
-    1. **Core Functionality**:
-        - Your script should start with an empty list named shopping_list.
-        - Implement functionality to add items to the list, remove items, and display the current list.
+1. **Core Functionality**:
+    - Your script should start with an empty list named shopping_list.
+    - Implement functionality to add items to the list, remove items, and display the current list.
 
-    2. __User Interface__:
-        - Use a loop to continuously display a menu with options to the user until they choose to exit. The menu should offer options to add an item, remove an item, view the list, and exit.
-        - For adding items, prompt the user for the item name and append it to `shopping_list`.
-        - For removing items, ask the user for the item name and remove it from `shopping_list`. If the item is not found, display a message indicating so.
-        - To view the list, print each item in `shopping_list` to the console.
-        - Ensure your script handles invalid menu choices gracefully.
+2. __User Interface__:
+    - Use a loop to continuously display a menu with options to the user until they choose to exit. The menu should offer options to add an item, remove an item, view the list, and exit.
+    - For adding items, prompt the user for the item name and append it to `shopping_list`.
+    - For removing items, ask the user for the item name and remove it from `shopping_list`. If the item is not found, display a message indicating so.
+    - To view the list, print each item in `shopping_list` to the console.
+    - Ensure your script handles invalid menu choices gracefully.
 
 `shopping_list_manager.py` Skeleton:
 
@@ -106,5 +106,43 @@ __Note for Students__:
 
     - You are responsible for completing the `main()` function with the appropriate logic to handle adding, removing, and displaying items in the `shopping_list`.
     - This task introduces you to working with lists in a practical scenario, enhancing your understanding of how dynamic data structures can be manipulated and utilized in Python programs.
+
+
+## 2. Explore `datetime` Module
+
+**Objective**: Familiarize yourself with Python’s `datetime` module by writing a script that performs specified operations with dates and times.
+
+**Task Instructions**:
+
+Your task is to create a Python script named `explore_datetime.py`. This script will demonstrate your ability to use the `datetime` module for handling dates and times in Python.
+
+__Part 1__: Display the Current Date and Time
+        Research how to use the __datetime__ module to obtain the current date and time.
+        Create a function with a name __display_current_datetime__ and
+        save the current date inside a __current_date__ variable
+        Format and print the current date and time in a readable format, such as “YYYY-MM-DD HH:MM:SS”.
+
+__Part 2__: Calculate a Future Date
+        Prompt the user to enter a number of days (as an integer).
+        Create a function with a name `calculate_future_date` and
+        saves the future date inside a `future_date` variable
+        Calculate what the date will be after adding the specified number of days to the current date.
+        Print the future date in a format like “YYYY-MM-DD”.
+
+Guidance:
+
+    Start by importing the necessary components from the `datetime` module.
+    Look into the `datetime.now()` function to get the current date and time.
+    Use `timedelta(days=number_of_days)` to represent the duration to add to the current date.
+    Remember, Python’s official documentation is an excellent resource for learning how to use the standard library modules.
+
+Example Output (Hypothetical):
+
+```sh
+Current date and time: 2024-03-25 15:30:45
+Enter the number of days to add to the current date: 10
+Future date: 2024-04-04
+```
+
 
 
