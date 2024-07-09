@@ -16,7 +16,7 @@ Requirements for `arithmetic_operations.py`:
 
 Provided `main.py` for Testing:
 
-```
+```py
 from arithmetic_operations import perform_operation
 
 def main():
@@ -68,7 +68,7 @@ __Requirements__:
 
 `shopping_list_manager.py` Skeleton:
 
-```
+```py
 def display_menu():
     print("Shopping List Manager")
     print("1. Add Item")
@@ -129,12 +129,12 @@ __Part 2__: Calculate a Future Date
         Calculate what the date will be after adding the specified number of days to the current date.
         Print the future date in a format like “YYYY-MM-DD”.
 
-Guidance:
+__Guidance__:
 
-    Start by importing the necessary components from the `datetime` module.
-    Look into the `datetime.now()` function to get the current date and time.
-    Use `timedelta(days=number_of_days)` to represent the duration to add to the current date.
-    Remember, Python’s official documentation is an excellent resource for learning how to use the standard library modules.
+ - Start by importing the necessary components from the `datetime` module.
+ - Look into the `datetime.now()` function to get the current date and time.
+ - Use `timedelta(days=number_of_days)` to represent the duration to add to the current date.
+ - Remember, Python’s official documentation is an excellent resource for learning how to use the standard library modules.
 
 Example Output (Hypothetical):
 
@@ -142,6 +142,50 @@ Example Output (Hypothetical):
 Current date and time: 2024-03-25 15:30:45
 Enter the number of days to add to the current date: 10
 Future date: 2024-04-04
+```
+
+### 3. Temperature Conversion Tool
+
+__Objective__: Illustrate the concept of variable scope by creating a script that converts temperatures between Celsius and Fahrenheit, using global variables to store conversion factors.
+
+__Task Description__:
+
+Create a Python script named `temp_conversion_tool.py`. This script will define functions to convert temperatures between Celsius and Fahrenheit, demonstrating the use of global variables to store conversion factors that are accessible within functions.
+Requirements:
+
+ 1. __Define Global Conversion Factors__:
+        At the top of your script, define two global variables `FAHRENHEIT_TO_CELSIUS_FACTOR` and `CELSIUS_TO_FAHRENHEIT_FACTOR` to store the conversion factors (e.g., `(5/9)` for F to C and `(9/5)` for C to F, respectively).
+
+ 2. __Implement Conversion Functions__:
+        
+    - Write a function `convert_to_celsius(fahrenheit)` that takes a temperature in Fahrenheit and returns the temperature converted to Celsius.
+    - Write a function `convert_to_fahrenheit(celsius)` that takes a temperature in Celsius and returns the temperature converted to Fahrenheit.
+    - Inside each function, use the respective global conversion factor to perform the conversion.
+
+ 3. __User Interaction__:
+    - Prompt the user to enter a temperature and specify whether it’s in Celsius or Fahrenheit.
+    - Based on the user’s input, call the appropriate conversion function and display the converted temperature.
+    - If gthe user entered a wrong input,raise an error “Invalid temperature. Please enter a numeric value.”
+
+__Guidance__:
+
+    - Remember to access global variables using the `global` keyword if you need to modify them inside functions. However, for this task, you’ll only be reading their values.
+    Use input validation to ensure that the user enters a valid temperature and unit.
+
+Example Output (Hypothetical):
+
+```sh
+Enter the temperature to convert: 100
+Is this temperature in Celsius or Fahrenheit? (C/F): F
+100.0°F is 37.77777777777778°C
+```
+
+Or:
+
+```sh
+Enter the temperature to convert: 0
+Is this temperature in Celsius or Fahrenheit? (C/F): C
+0.0°C is 32.0°F
 ```
 
 
