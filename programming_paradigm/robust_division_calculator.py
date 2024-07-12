@@ -5,7 +5,7 @@ like division by zero and non-numeric inputs using command line arguments
 
 def safe_divide(numerator, denominator):
     try:
-        result = int(numerator) / int(denominator)
+        result = float(numerator) / float(denominator)
         return result
     
     except ZeroDivisionError:
