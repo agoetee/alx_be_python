@@ -9,15 +9,15 @@ class Book:
         self.author = author
         self._is_checked_out = False
 
-    def check_out_book(self, title):
-        if self.title == title:
+    def check_out_book(self):
+        if self.title == self.title:
             self._is_checked_out == True
             return True
         else:
             return False
 
-    def return_book(self, title):
-        if self.title == title:
+    def return_book(self):
+        if self.title == self.title:
             self._is_checked_out == False
             return True
         else:
