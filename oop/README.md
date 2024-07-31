@@ -2,26 +2,27 @@
 
  ## 0. Create a Simple Bank Account Class
 
- Objective: Understand the fundamentals of OOP in Python by implementing a BankAccount class that encapsulates banking operations. Use command line arguments to interact with instances of this class.
-Task Description:
+ __Objective:__ Understand the fundamentals of OOP in Python by implementing a `BankAccount` class that encapsulates banking operations. Use command line arguments to interact with instances of this class.
+__Task Description__:
 
-You will create two Python scripts: bank_account.py, which contains the BankAccount class, and main-0.py, which interfaces with the class through command line arguments to perform banking operations.
-bank_account.py:
+You will create two Python scripts: `bank_account.py`, which contains the `BankAccount` class, and `main-0.py`, which interfaces with the class through command line arguments to perform banking operations.
+`bank_account.py`:
 
-    Class Definition:
-        Define a class named BankAccount.
-        Use the __init__ method to initialize an account_balance attribute. Optionally, accept an initial balance parameter, defaulting to zero.
+- __Class Definition__:
+    1 Define a class named `BankAccount`.
+        Use the __init__ method to initialize an `account_balance` attribute. Optionally, accept an initial balance parameter, defaulting to zero.
 
-    Encapsulation and Behaviors:
-        Implement deposit(amount), withdraw(amount), and display_balance() methods.
-        deposit should add the specified amount to account_balance.
-        withdraw should deduct the amount from account_balance if funds are sufficient, returning True; otherwise, return False and do not alter the balance.
-        display_balance should print the current balance in a user-friendly format.
+    2 Encapsulation and Behaviors:
+        - Implement `deposit(amount)`, `withdraw(amount)`, and `display_balance() `methods.
+        - `deposit` should add the specified amount to `account_balance`.
+        - `withdraw` should deduct the amount from `account_balance` if funds are sufficient, returning `True`; otherwise, return `False` and do not alter the balance.
+        - `display_balance` should print the current balance in a user-friendly format.
 
-main-0.py for Command Line Interaction:
+`main-0.py` for Command Line Interaction:
 
-This script utilizes BankAccount through command line arguments for banking operations.
+This script utilizes `BankAccount` through command line arguments for banking operations.
 
+```py
 import sys
 from bank_account import BankAccount
 
@@ -50,34 +51,44 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
 
 Sample Command Line Usage and Expected Outputs:
 
-    Deposit:
+1. __Deposit:__
 
-   python main-0.py deposit:50
+```shell
+python main-0.py deposit:50
+```
 
-Expected Output: Deposited: $50
+Expected Output: `Deposited: $50`
 
-    Withdraw with Sufficient Funds:
+2. __Withdraw with Sufficient Funds:__
 
-   python main-0.py withdraw:20
+```sh
+python main-0.py withdraw:20
+```
 
-Expected Output: Withdrew: $20
+Expected Output: `Withdrew: $20`
 
-    Withdraw with Insufficient Funds:
+3. __Withdraw with Insufficient Funds:__
 
-   python main-0.py withdraw:150
+```sh
+python main-0.py withdraw:150
+```
 
-Expected Output: Insufficient funds.
+Expected Output:` Insufficient funds.`
 
-    Display Balance:
+4. __Display Balance:__
 
-   python main-0.py display
+```sh
+python main-0.py display
+```
 
-Expected Output: Current Balance: $[amount]
-Implementation Notes for you:
+Expected Output: `Current Balance: $[amount]`
 
-    Ensure your BankAccount class in bank_account.py correctly implements the specified functionalities and adheres to the principles of encapsulation.
-    Use main.py to test your BankAccount class by performing various operations. Adjust the initial balance as needed for testing different scenarios.
-    This task combines learning OOP concepts with practical command line interaction, enhancing your understanding of Python programming.
+__Implementation Notes for you__:
+
+- Ensure your `BankAccount` class in `bank_account.py` correctly implements the specified functionalities and adheres to the principles of encapsulation.
+- Use `main.py` to test your `BankAccount` class by performing various operations. Adjust the initial balance as needed for testing different scenarios.
+- This task combines learning OOP concepts with practical command line interaction, enhancing your understanding of Python programming.
