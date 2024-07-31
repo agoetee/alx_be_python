@@ -167,11 +167,12 @@ __Implementation Notes for you:__
 
 ## 2. Writing Unit Tests for a Simple Calculator Class 
 
-Objective: Learn the basics of unit testing in Python by writing tests for a provided SimpleCalculator class that supports addition, subtraction, multiplication, and division operations.
-Provided: simple_calculator.py
+__Objective__: Learn the basics of unit testing in Python by writing tests for a provided `SimpleCalculator` class that supports addition, subtraction, multiplication, and division operations.
+Provided: `simple_calculator.py`
 
 You’re given a SimpleCalculator class with basic arithmetic operations. Your task is to write unit tests to verify its correctness.
 
+```py
 # simple_calculator.py
 
 class SimpleCalculator:
@@ -194,31 +195,32 @@ class SimpleCalculator:
         if b == 0:
             return None
         return a / b
+```
+__Task:__ Write Unit Tests in __test_simple_calculator.py__
 
-Task: Write Unit Tests in test_simple_calculator.py
-
-Create a test_simple_calculator.py script to define and run unit tests for each method in the SimpleCalculator class. Your tests should cover various scenarios to ensure the class functions correctly.
+Create a `test_simple_calculator.py` script to define and run unit tests for each method in the `SimpleCalculator` class. Your tests should cover various scenarios to ensure the class functions correctly.
 Guidelines for Writing Tests:
 
-    Import the Necessary Modules:
-        Import the unittest module and the SimpleCalculator class from simple_calculator.py.
+1. __Import the Necessary Modules__:
+    - Import the `unittest` module and the `SimpleCalculator` class from `simple_calculator.py`.
 
-    Define a Test Class:
-        Create a test class that inherits from unittest.TestCase.
+2. __Define a Test Class__:
+    - Create a test class that inherits from `unittest.TestCase`.
 
-    Write Test Methods:
-        Write at least one test method for each operation (add, subtract, multiply, divide) provided by the SimpleCalculator.
-        Include tests for edge cases, such as dividing by zero.
+3. __Write Test Methods__:
+    - Write at least one test method for each operation (`add`, `subtract`, `multiply`, `divide`) provided by the `SimpleCalculator`.
+    - Include tests for edge cases, such as dividing by zero.
 
-    Use Assertions to Verify Results:
-        Utilize self.assertEqual() to check for expected outcomes.
-        For the divide method, ensure you test both normal operation and division by zero.
+4. __Use Assertions to Verify Results__:
+    - Utilize `self.assertEqual()` to check for expected outcomes.
+    - For the `divide` method, ensure you test both normal operation and division by zero.
 
-    Running Your Tests:
-        Run your tests using the command line: python -m unittest test_simple_calculator.py.
+5 __Running Your Tests__:
+    - Run your tests using the command line: `python -m unittest test_simple_calculator.py`.
 
-Example Test Method Structure:
+__Example Test Method Structure:__
 
+```py
 import unittest
 from simple_calculator import SimpleCalculator
 
@@ -235,10 +237,10 @@ class TestSimpleCalculator(unittest.TestCase):
         # Add more assertions to thoroughly test the add method.
 
 # Remember to write additional test methods for subtract, multiply, and divide.
+```
+__Note for you:__
 
-Note for you:
-
-    Your goal is to think like a tester and identify as many relevant test cases as possible for each method.
-    Pay special attention to potential edge cases, such as division by zero, which could lead to unexpected behaviors if not properly handled.
-    Writing comprehensive tests not only helps ensure your code is working correctly but also improves your understanding of how the code operates under different conditions.
+- Your goal is to think like a tester and identify as many relevant test cases as possible for each method.
+- Pay special attention to potential edge cases, such as division by zero, which could lead to unexpected behaviors if not properly handled.
+- Writing comprehensive tests not only helps ensure your code is working correctly but also improves your understanding of how the code operates under different conditions.
 
